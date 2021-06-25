@@ -23,22 +23,78 @@ p{
 }
 
 /* most need code */
+
+/* text position */
+.text-center
+{
+    text-align: center;
+}
+
+/* background */
+
+.bg-gray
+{
+    background:rgb(39, 38, 38);
+    color: white;
+}
+
+/* color */
 .text-primary{
     color: rgb(51, 170, 35);
 }
+
+/* heading */
 .heading-1
 {
     font-size: 4rem;
     margin-bottom:2rem ;
     line-height: 1.5rem;
 }
+/* section 1 what */
+.heading-2
+{
+    font-size: 2rem;
+    margin-bottom:2rem ;
+    line-height: 1.5rem;
+}
 
+/* padding */
+.py-1
+{
+    padding: 1.5rem 0;
+}
+.py-2
+{
+    padding: 2rem 0;
+}
+.py-3
+{
+    padding: 3rem 0;
+}
+
+.p-1
+{
+    padding: 1.5rem ;
+}
+.p-2
+{
+    padding: 2rem ;
+}
+.p-3
+{
+    padding: 3rem   ;
+}
+
+
+
+/* paragraph */
 .paragraph
 {
     font-size: 1.2rem;
     margin-bottom: 2rem;
 }
 
+/* button */
  .btn
 {
     display: inline-block;
@@ -54,6 +110,18 @@ p{
 {
     background: rgb(21, 87, 12) ;
 }
+
+/*  utility part --->section what part */
+.container
+{
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 2rem;
+    overflow: hidden;
+}
+
+
+
 /* nav-bar */
 
 #navbar{
@@ -86,7 +154,7 @@ p{
 
 #navbar ul li a:hover
 {
-    background: rgb(51, 170, 35);;
+    background: rgb(51, 170, 35);
     border-radius: .30rem;
 }
 
@@ -111,5 +179,75 @@ p{
     /* showcase has a height but showcase-content dont have so we have to add the height */
     align-items: center;
     padding: 0 2rem;
+    
+}
+
+
+/* section 1 : what we do */
+
+#what .items
+{
+    display: flex;
+    padding: 1rem;
+}
+
+#what .items .item
+{
+    flex: 3;
+    text-align: center;
+    padding: 1rem;
+}
+
+#what .items .item i
+{
+    background:rgb(51, 170, 35);
+    padding: 1.5rem;
+    border: none;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+
+}
+
+
+/* section 2 : who we are  */
+
+#who
+{
+    display: flex;
+}
+
+#who div
+{
+    flex: 1;
+}
+#who .who-img
+{
+    background: url(../img/people.jpg) no-repeat center center/cover;
+}
+
+.list
+{
+    list-style: none;
+    margin: .5rem;
+}
+.list li
+{
+    padding: .4rem;
+    border-bottom: white solid 1px;
+
+}
+
+/* section 3 : client  */
+
+#client .items
+{
+    display: flex;
+}
+
+#client .items img
+{
+    display: block;
+    margin: auto;
+    width: 60%;
     
 }
