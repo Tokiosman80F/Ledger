@@ -32,6 +32,11 @@ p{
 
 /* background */
 
+.bg-primary{
+    background: rgb(51, 170, 35);
+    color: white;
+}
+
 .bg-gray
 {
     background:rgb(39, 38, 38);
@@ -109,6 +114,15 @@ p{
 .btn:hover
 {
     background: rgb(21, 87, 12) ;
+}
+
+.btn-dark
+{
+    display: inline-block;
+    color: white;
+    background: rgb(39, 38, 38);
+    text-align: center;
+    
 }
 
 /*  utility part --->section what part */
@@ -250,4 +264,28 @@ p{
     margin: auto;
     width: 60%;
     
+}
+
+/* section : Contract */
+#contact
+{
+    display: flex;
+}
+
+#contact .map ,#contact .contact-form
+{
+    flex: 1;
+}
+#contact .contact-form .form-group
+{
+    margin: .75rem;
+}
+#contact .contact-form label
+{
+  display: block;
+}
+#contact .contact-form input,
+#contact .contact-form textarea
+{
+    width: 100%;
 }
